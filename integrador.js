@@ -1,0 +1,14 @@
+alert("Bienvenidos al Restaurant al Chifa Madam Tusan. Está es su cuenta ");
+var presupuesto=parseFloat(prompt("Ingresa el monto de tu presupuesto"));
+var entrada=parseFloat(prompt("Ingresa el monto de la entrada"));
+var segundo=parseFloat(prompt("Ingresa el monto del segundo"));
+var postre=parseFloat(prompt("Ingresa el monto del postre:"));
+var total=entrada+segundo+postre;
+var igv=(total*18/100+total);
+console.log("La entrada cuesta",entrada);
+console.log("El segundo cuesta",segundo);
+console.log("El postre cuesta:",postre);
+console.log("EL costo total es", total);
+console.log("EL costo total más IGV", igv);
+console.log("Su vuelto será:",(presupuesto-igv));
+console.log("Madam Tusan agradece su visita, vuelva pronto");
